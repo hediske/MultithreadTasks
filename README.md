@@ -1,18 +1,36 @@
-## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Tasks Manager
 
-## Folder Structure
 
-The workspace contains two folders by default, where:
+This project is a java RMI application allowing the Java Clients to
+    <ul>
+        <li>    Adding a new Task to the Pool and Setting its priority in a BlockingPriorityQueue for thread-Safety .</li>
+        <li>    Removing a Task from the Pool before its execution .
+        <li>    Show all the remaining tasks before their termination .
+        <li>    Executing the tasks using 16 workers threads .
+        <li>    Creation of a new worker thread when a thread is interrupted or is down .
+        <li>    Concurrency management of multiple clients at once .
+    </ul> 
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+    
+    
+> At the beginning , when launching the client a prompt giving multiple options will be shown:<br>
+   1  : Add a new task   
+   2  : Remove a task  
+   3  : Show all tasks  
+   4  : Enable/disable tasks execution<br> 
+   "#": Exit
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+<h2> How to run it </h2>
+    
+    cd src && javac Server/*.java Client/*.java
+    java Server.Server
+    java Client.client
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+<h2>
+Prerequities
+</h2>
+Java JDK
 
-## Dependency Management
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+

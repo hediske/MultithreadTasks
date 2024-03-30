@@ -9,5 +9,6 @@ public interface IListCrud extends Remote {
     public String removeFromList(int id) throws RemoteException;
     public String showList() throws RemoteException;
     public ITask createTask(String... data) throws RemoteException;
+    public String enableDisableTasksExecution() throws RemoteException;
     
 }

@@ -60,4 +60,7 @@ public class tasksService {
     public void lauchWorkers(){
         this.taskExecutor.LaunchExecutor();
     }
+    public void shutdown(){
+        this.taskExecutor.shutdown();
+    }
 }

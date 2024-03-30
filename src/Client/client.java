@@ -15,7 +15,7 @@ public class client {
             {
                 Scanner scanner  = new Scanner(System.in);
                 System.out.println("What do you want to do ? ");
-                System.out.println("1 : add a new task   \n2 : Remove a task  \n3  : Show all tasks  ");
+                System.out.println("1 : add a new task   \n2 : Remove a task  \n3  : Show all tasks  \n4  : enable/disable tasks execution  : ");
                 System.out.println("#  : exit");
                 char choice =scanner.nextLine().charAt(0);
                 if (choice=='#')
@@ -45,6 +45,7 @@ public class client {
                     case '3' ->System.out.println(mediator.showList());
                     default->
                         System.out.println("please choose a valid option");
+                    case '4' -> System.out.println(mediator.enableDisableTasksExecution());
 
                 }
             }
